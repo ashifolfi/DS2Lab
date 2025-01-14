@@ -50,7 +50,7 @@ class Program
             case 1:
             {
                 inputFilename = args[0];
-                outputFilename = Path.GetDirectoryName(args[0]) + Path.GetFileNameWithoutExtension(args[0]) + ".lab";
+                outputFilename = Path.GetFileNameWithoutExtension(args[0]) + ".lab";
 
                 if (!File.Exists(inputFilename))
                 {
